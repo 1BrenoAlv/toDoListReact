@@ -1,0 +1,46 @@
+.formulario {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 32px;
+}
+
+.campoDeEntrada {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.campoDeEntrada:focus {
+  outline: none; 
+  border-color: #0A3D62;
+  box-shadow: 0 0 0 3px rgba(10, 61, 98, 0.15);
+}
+
+.botaoAdicionar {
+  padding: 12px 24px;
+  background-color: #0A3D62;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botaoAdicionar:hover {
+  background-color: #082F4E;
+}
+
+@media (max-width: 480px) {
+  .formulario {
+    flex-direction: column;
+  }
+  
+  .botaoAdicionar {
+    width: 100%;
+  }
+}
